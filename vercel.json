@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/v1/chat/completions",
+      "dest": "/api/chat-completions.js"
+    },
+    {
+      "src": "/v1/models",
+      "dest": "/api/models.js"
+    },
+    {
+      "src": "/api/verify",
+      "dest": "/api/verify.js"
+    },
+    {
+      "src": "/api/config",
+      "dest": "/api/config.js"
+    },
+    {
+      "src": "/api/chat",
+      "dest": "/api/chat.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
