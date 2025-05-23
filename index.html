@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini 聊天</title>
+    <title>小炜智能体·Chat</title>
     <style>
         :root {
-            --primary-color: #4f46e5;
-            --secondary-color: #818cf8;
+            --primary-color: #0055ff;
+            --secondary-color: #0073ff;
             --bg-color: #f9fafb;
             --text-color: #1f2937;
             --border-color: #e5e7eb;
-            --user-msg-bg: #4f46e5;
+            --user-msg-bg: #09f593;
             --user-msg-color: white;
             --bot-msg-bg: #f3f4f6;
             --bot-msg-color: #1f2937;
@@ -193,12 +193,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>Gemini 聊天</h1>
+            <h1>和小炜聊天</h1>
         </header>
 
         <div class="api-key-container">
             <div class="api-key-input">
-                <input type="password" id="api-key" placeholder="输入 Gemini API 密钥" />
+                <input type="password" id="api-key" placeholder="输入测试密钥" />
                 <button id="verify-btn">验证</button>
             </div>
             <div id="api-key-error" class="error-message"></div>
@@ -207,7 +207,7 @@
         <div class="chat-container">
             <div id="messages" class="messages">
                 <div class="message bot-message">
-                    欢迎使用 Gemini 聊天！请先验证您的 API 密钥。
+                    欢迎和小炜聊天！请先验证您的 API 密钥。
                 </div>
             </div>
             <div class="input-container">
